@@ -20,7 +20,7 @@ import { navigate } from "@/navigation/RootNavigation";
 const { height } = Dimensions.get("window");
 
 const mobileHeight = height * 0.645;
-const AddEnrolees = ({ visible, onContinue, onCancel }) => {
+const AddEnrolees = ({ visible, onCancel, resetStates }) => {
   const [name, setName] = useState();
   const [nameError, setNameError] = useState(null);
   const [clubError, setClubError] = useState(null);
@@ -90,7 +90,7 @@ const AddEnrolees = ({ visible, onContinue, onCancel }) => {
       console.log("paoipiaspas", params);
       try {
         const user = await addEnrollData(params).unwrap();
-        onCancel();
+        resetStates();
         CustomSuccessToast({ message: user?.message });
         clearData();
         console.log("sdsadada", user?.data);

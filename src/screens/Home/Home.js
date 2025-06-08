@@ -271,6 +271,11 @@ export const Home = () => {
     }
   };
 
+  const resetStates = () => {
+    setSearchText(""), selectedClub(null);
+    setModalVisible(false);
+    getEnrollListData(ApiHomeInventory.getEnrollData);
+  };
   return (
     <ScreenWrapper
       scrollEnabled={false}
@@ -374,9 +379,9 @@ export const Home = () => {
         <AddEnrolees
           visible={modalVisible}
           onCancel={() => {
-            getEnrollListData(ApiHomeInventory.getEnrollData);
             setModalVisible(false);
           }}
+          resetStates={() => resetStates()}
         />
         {enrollDataLoading && !refreshing && !isLoadingMore && (
           <FullScreenLoader />
