@@ -272,7 +272,7 @@ export const Home = () => {
   };
 
   const resetStates = () => {
-    setSearchText(""), selectedClub(null);
+    setSearchText(""), setSelectedClub(null);
     setModalVisible(false);
     getEnrollListData(ApiHomeInventory.getEnrollData);
   };
