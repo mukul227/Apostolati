@@ -1,0 +1,18 @@
+export const NAVIGATION = {
+  home: "Home",
+  store: "Store",
+  bottomTab: "BottomTabNavigator",
+  homeNavigator: "homeNavigator",
+  login: "LoginScreen",
+  signup: "SignupScreen",
+  forgot: "ForgotPasswordScreen",
+  resetPassword: "ResetPasswordScreen",
+  verifyAccount: "VerifyAccountScreen",
+  profile: "Profile",
+  personalInfo: "PersonalInfo",
+  changePassword: "ChangePassword",
+  privacyPolicy: "PrivacyPolicy",
+  termConditions: "TermConditions",
+  deleteAccountPassword: "DeleteAccountPassword",
+  verifyUpdateAccountScreen: "VerifyUpdateAccountScreen",
+};
