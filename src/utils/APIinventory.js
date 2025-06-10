@@ -1,8 +1,8 @@
 export const BASE_URL = "https://apostolati.minisquaretechnologies.com";
-export const TERMS_URL = BASE_URL+"/api/v2/users/termsAndCondition";
-export const PRIVACY_URL =BASE_URL+ "/api/v2/users/privacy";
-export const CERTIFICATE_LINK = BASE_URL+"/api/v2/users/downloadShareableCard";
-export const DONWLOAD_LINK = BASE_URL+"/api/v2/users/downloadCard ";
+export const TERMS_URL = BASE_URL + "/api/v2/users/termsAndCondition";
+export const PRIVACY_URL = BASE_URL + "/api/v2/users/privacy";
+export const CERTIFICATE_LINK = `${BASE_URL}/api/v2/users/downloadShareableCard`;
+export const DONWLOAD_LINK = `${BASE_URL}/api/v2/users/downloadCard`;
 export const ApiUserInventory = {
   login: "/api/v2/users/authenticate",
   changeFirstPassword: "/api/v2/users/change-first-password",
